@@ -43,7 +43,7 @@ public class feature {
 	}
 	public static double myMethod(double y1, double y2) //Method overloading
 	{
-		return y1 + y2 ;
+		return y1 + y2;
 	}
 
 }
