@@ -6,7 +6,8 @@ class Parent {
     public int publicNum = 15;
     final int finalNum = 20;
 
-    private void privateMethod() {
+    @SuppressWarnings("unused")
+	private void privateMethod() {
         System.out.println("This is a private method in the Parent class.");
     }
 
@@ -21,6 +22,14 @@ class Parent {
     final void finalMethod() {
         System.out.println("This is a final method in the Parent class.");
     }
+
+	public int getPrivateNum() {
+		return privateNum;
+	}
+
+	public void setPrivateNum(int privateNum) {
+		this.privateNum = privateNum;
+	}
 }
 
 class Child extends Parent {
